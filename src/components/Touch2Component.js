@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
     // Estilo geral do TouchableOpacity
     backgroundColor: 'white',    // Cor de fundo do TouchableOpacity
     padding: 10,                 // Preenchimento interno
-    width: 150,                  // Largura do TouchableOpacity
+    width: 700,                 // Largura do TouchableOpacity
+    height: 150,                  // Altura do TouchableOpacity
     alignItems: 'center',        // Alinhamento dos itens no eixo transversal
     justifyContent: 'center',    // Alinhamento dos itens no eixo principal
     borderBottomWidth: 3,
