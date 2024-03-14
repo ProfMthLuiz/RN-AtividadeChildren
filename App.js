@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
 import Touch3Component from './src/components/Touch3Component';
 import Touch2Component from './src/components/Touch2Component';
 import Touch1Component from './src/components/Touch1Component';
@@ -8,7 +8,15 @@ export default function App() {
     <View style={styles.container}>
 
       <Touch1Component>
-        <Image style={{ width: 150, height: 50 }} source={require('./src/assets/images/img.jpg')} />
+        <Image style={{ width: 700, height: 150 }} source={require('./src/assets/images/img.jpg')} />
+      </Touch1Component>
+
+      <Touch1Component>
+        <ImageBackground style={{ width: 700, height: 150, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.5)' }} source={require('./src/assets/images/img.jpg')} >
+          <View style={{ width: 700, height: 150, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>  
+            <Text style={[styles.text, { color: 'white'}]}>Button</Text>
+          </View> 
+        </ImageBackground>
       </Touch1Component>
 
       <Touch2Component>
@@ -32,7 +40,7 @@ const styles = StyleSheet.create({
   },
 
   text:{
-    fontSize: 17,
+    fontSize: 28,
     letterSpacing: 1,
     fontWeight: 500,
   }
