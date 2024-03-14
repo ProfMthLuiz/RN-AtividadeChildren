@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     backgroundColor: 'black',
     borderWidth: 3,
-    borderColor: '#000000'
+    borderColor: '#000000',
+    width: 700,                 // Largura do TouchableOpacity
+    height: 150,                  // Altura do TouchableOpacity
   }
 });
